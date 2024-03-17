@@ -52,7 +52,7 @@ ul> li > a {
     transition: color 0.3s;
 }
 nav ul li a:hover {
-    color: #f13737be;
+    color: #3A8FFF;
   }
   nav ul li {
     margin-right: 35px; 
@@ -113,7 +113,7 @@ h5 {
     background-color: rgba(0, 0, 0, 0.336);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #f13737be;
+    background-color: #3A8FFF;
     border-radius: 10px;
     width: 30px;
 }
