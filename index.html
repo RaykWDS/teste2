@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB - PORTIFOLIO</title>
+    <link rel="stylesheet" href="index.css">   
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="#section1">// Sobre mim</a></li>
+            <li><a href="#section2">// Conhecimentos</a></li>
+            <li><a href="#section3">// Meus Projetos</a></li>
+            <li><a href="#section4">// Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section id="section1">
+            <p>.</p>
+            <h1>RAYK WADSON</h1>
+            <p><h2>
+                 WEB DEVELOPER  // SISTEMS ANALYST 
+            </h2></p>
+        </section>
+        <section id="section2">
+            <h3>
+                Conhecimentos
+             </h3>
+             <div class="expertise">
+                 <img src="img/IMG expertise.png" alt="expertise">
+             </div>
+        </section>
+        <section id="section3">
+            <h4><p>Meus</p> Projetos</h4>
+            <div class="Loading">
+                <img src="img/Loading.gif" alt="">
+
+            </div>
+        </section>
+        <section id="section4">
+
+            
+                <h5>Contatos</h5>
+        </section>
+            </div> 
+            <div class="imgs4">
+                <section id="section4">
+                    <a href="http://www.linkedin.com/in/raykwadsom" target="_blank">
+                        <img src="img/Linkeldin.png">
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contatoraykdev@gmail.com" target="_blank">
+                        <img src="img/gmail.png">
+                    </a>
+                    <a href="https://forms.gle/whpsZXLM9HZ2Ywno9" target="_blank">
+                        <img src="img/Forms.png">
+                    </a>
+                </section>  
+            </div>                     
+    </header> 
+    <script>
+        // Função para rolar suavemente até o elemento alvo
+        function scrollToTarget(target) {
+            const element = document.querySelector(target);
+            if (element) {
+                const offset = window.innerHeight / 2 - element.clientHeight / 2;
+                window.scrollTo({
+                    top: element.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    
+        // Adicionar evento de clique aos links da navegação
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Evitar o comportamento padrão do link
+                const target = this.getAttribute('href'); // Obter o alvo do atributo href
+                scrollToTarget(target); // Chamar a função de rolagem suave
+            });
+        });
+    </script>
+</body>
+</html>
+

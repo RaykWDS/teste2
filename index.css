@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Plex";
+    src: url(fonts/IBMPlexMono-Bold.ttf);
+}
+@font-face {
+    font-family: "Ojuju";
+    src: url(fonts/Ojuju-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "Cagliostro";
+    src: url(fonts/Cagliostro-Regular.ttf);
+}
+@font-face {
+    font-family: "Lumos";
+    src: url(fonts/LUMOS\ THIN\ DEMO\ .ttf);
+}
+body{
+    height: 100%; 
+    font-family: "Cagliostro";
+    color: azure;
+    background-image: url(img/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #161820;
+}
+#nav {
+    top: 0;
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    backdrop-filter: saturate(180%) blur(30px);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+ul> li{
+    list-style-type: none;
+}
+ul> li > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #f13737be;
+  }
+  nav ul li {
+    margin-right: 35px; 
+}
+h1 {
+    text-align: center;
+    margin-top: 200px;
+    font-family: "Plex";
+    font-size: 120px;
+}
+h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Plex";
+    font-size: 18px;
+} 
+h3 {
+    text-align: center;
+    margin-top: 300px;
+    font-family: "Plex";
+    font-size: 70px;
+}
+h4 {
+    text-align: left;
+    margin-top: 150px;
+    font-family: "Plex";
+    font-size: 90px;
+    margin-left: 70px;
+}
+.Loading img {
+    width: 200px;
+    height: auto;
+    margin-top: 90px;
+} 
+.Loading{
+    text-align: center;
+}
+h5 {
+    text-align: left;
+    margin-top: 150px;
+    font-family: "Plex";
+    font-size: 90px;
+    margin-left: 70px;
+    
+}
+.expertise img {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    height: 400px;
+    width: auto;
+    margin: auto;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.336);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #f13737be;
+    border-radius: 10px;
+    width: 30px;
+}
+.contatos {
+    justify-content: right;
+    text-align: right;
+
+}
+.imgs4 img {
+    width: 48px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.imgs4 {
+    text-align: center;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  #arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  
+  #arrow img {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #nav {
+        width: 100%;
+        margin-top: -5px;
+
+    } 
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    ul> li > a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        transition: color 0.3s;
+    }
+    nav ul li {
+        margin-right: 20px; 
+    }
+    body { 
+        font-family: "Cagliostro";
+        color: azure;
+        background-image: url(img/background.jpg);
+        background-size: 130%;
+        background-repeat: no-repeat;
+
+    }
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-family: "Plex";
+        font-size: 65px;
+    }
+    h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Plex";
+    font-size: 18px;
+    }
+    h3 {
+    text-align: center;
+    margin-top: 200px;
+    font-family: "Plex";
+    font-size: 25px;
+    }
+    .expertise img {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        height: 178px;
+        width: auto;
+        margin: auto;
+        margin-left: -2px;
+    }
+    h4 {
+        margin-left: auto;
+        text-align: center;
+        margin-top: 200px;
+        font-family: "Plex";
+        font-size: 50px;
+    }
+    h5 {
+        margin-left: auto;
+        text-align: center;
+        margin-top: 100px;
+        font-family: "Plex";
+        font-size: 50px;
+
+    }
+    
+    }
+    .imgs4 img {
+        width: 48px;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-right: 10px;
+    }
+    .imgs4 {
+        text-align: center;
+    }
+    .Loading img {
+        width: 200px;
+        height: auto;
+        margin-top: 90px;
+    } 
+    .Loading{
+        text-align: center;
+    }
+    
+
+
+
+    
+
+
